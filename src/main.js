@@ -1,13 +1,10 @@
 import express from 'express'
-import { getAllPosts } from './db.js'
 
 
 const app = express()
 
-app.get('/', async (req, res) => {
-  const allPosts = await getAllPosts()
-  console.log('ALL POSTS', allPosts)
-  res.send('{ "hi": ":)" }')
+app.post('/hello', async (req, res) => {
+  res.send('HELLO FROM POST')
 })
 
 const port = 5000

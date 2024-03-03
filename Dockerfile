@@ -14,3 +14,4 @@ COPY schema.sql /docker-entrypoint-initdb.d/
 # When the container starts, MySQL will automatically execute
 # scripts in /docker-entrypoint-initdb.d/ to initialize the database
 
+EXPOSE 3306
